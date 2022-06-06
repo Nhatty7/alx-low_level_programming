@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char az;
+	int az;
 
 	for (az = '0'; az <= '9'; az++)
 	{
