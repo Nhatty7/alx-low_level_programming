@@ -15,7 +15,7 @@ int main(void)
 	{
 		putchar(az);
 
-		if (az != 9)
+		if (az != '9')
 		{
 			putchar(',');
 			putchar(' ');
