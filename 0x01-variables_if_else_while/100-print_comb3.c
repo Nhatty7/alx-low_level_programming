@@ -18,13 +18,10 @@ int main(void)
 			putchar(i);
 			putchar(j);
 
-			if (i != '8')
+			if ((i != '9') || (i == '9' && j != '9'))
 			{
-				if (j != '9')
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
