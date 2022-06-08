@@ -23,7 +23,7 @@ int main(void)
 		}
 		else
 		{
-			int f = a + b;
+			long f = a + b;
 			printf(", %ld", f);
 			a = b;
 			b = f;
