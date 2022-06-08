@@ -2,8 +2,10 @@
 
 /**
  * add -  add two values
+ * @n1: the first nuber
+ * @n2: the second number
  *
- * return: Integer value
+ * Return: Integer value
  */
 int add(int n1, int n2)
 {
