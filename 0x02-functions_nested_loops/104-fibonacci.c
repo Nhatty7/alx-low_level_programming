@@ -8,24 +8,24 @@
 int main(void)
 {
 	int i = 0;
-	long a = 1;
-	long b = 2;
+	int a = 1;
+	int b = 2;
 
 	while (i < 98)
 	{
 		if (i == 0)
 		{
-			printf("%ld", a);
+			printf("%d", a);
 		}
 		else if (i == 1)
 		{
-			printf(", %ld", b);
+			printf(", %d", b);
 		}
 		else
 		{
-			long f = a + b;
+			int f = a + b;
 
-			printf(", %ld", f);
+			printf(", %d", f);
 			a = b;
 			b = f;
 		}
