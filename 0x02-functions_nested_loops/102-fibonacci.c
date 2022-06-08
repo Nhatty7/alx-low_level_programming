@@ -24,6 +24,7 @@ int main(void)
 		else
 		{
 			long f = a + b;
+
 			printf(", %ld", f);
 			a = b;
 			b = f;
