@@ -19,6 +19,7 @@ void more_numbers(void)
 
 				y1 = y / 10;
 				y2 = y % 10;
+
 				_putchar((y1 + '0');
 				_putchar((y2 + '0');
 			}
