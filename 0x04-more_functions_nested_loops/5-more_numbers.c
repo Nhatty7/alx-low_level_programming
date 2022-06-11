@@ -15,18 +15,10 @@ void more_numbers(void)
 		{
 			if (y > 9)
 			{
-				int y1, y2;
-
-				y1 = y / 10;
-				y2 = y % 10;
-
-				_putchar((y1 + '0');
-				_putchar((y2 + '0');
+				_putchar((y / 10) + '0');
 			}
-			else
-			{
-				_putchar(y + '0');
-			}
+			
+			_putchar(y + '0');
 		}
 
 		_putchar('\n');
