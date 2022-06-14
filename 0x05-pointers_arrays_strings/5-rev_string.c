@@ -8,5 +8,32 @@
 
 void rev_string(char *s)
 {
-	print_rev(*s);
+	caht *start, *end, c;
+	int i, count;
+	int length = 0;
+
+	for (i = 0; s[i]; i++)
+	{
+		length++;
+	}
+
+	count = length;
+
+	start = s;
+	end = s;
+
+	for (i = 0; i < count - 1; i++)
+	{
+		end++;
+	}
+
+	for (i = 0; i < count / 2; i++)
+	{
+		c = *end;
+		*end = *start;
+		*start = c;
+
+		start++;
+		end--;
+	}
 }
