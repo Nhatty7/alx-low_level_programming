@@ -7,30 +7,26 @@
  */
 int main(void)
 {
-	int i = 0;
+	int i;
 	long int a = 1;
 	long int b = 2;
 
-	while (i < 98)
+	for (i = 0; i < 98; i++)
 	{
 		if (i == 0)
-		{
-			printf("%ld", a);
-		}
+			printf("%ld", j);
 		else if (i == 1)
-		{
-			printf(", %ld", b);
-		}
+			printf(", %ld", k);
 		else
 		{
-			long int f = a + b;
-
-			printf(", %ld", f);
-			a = b;
-			b = f;
+			t = k;
+			k += j;
+			printf(", %ld", k);
+			j = t;
 		}
-		++i;
 	}
+
 	printf("\n");
+
 	return (0);
 }
