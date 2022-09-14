@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * main - print alphabet
- *
- * Return: Always 0
- */
-void print_alphabet()
+  * print_alphabet - Print alphabet
+  *
+  * Return: void
+  */
+void print_alphabet(void)
 {
-	int az;
+	int c;
 
-	for (az = 97; az <= 122; az++)
+	for (c = 97; c <= 122; c++)
 	{
-		_putchar(az);
+		_putchar(c);
 	}
-	
+
 	_putchar('\n');
 }
