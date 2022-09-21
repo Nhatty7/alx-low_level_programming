@@ -12,7 +12,6 @@ int _atoi(char *s)
 	int sign = 1;
 	unsigned int sum = 0;
 	int flag = 0;
-	
 	while (s[i])
 	{
 		if (s[i] == 45)
