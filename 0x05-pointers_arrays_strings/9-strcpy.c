@@ -6,7 +6,6 @@
  * @src: source value
  * Return: char
  */
-
 char *_strcpy(char *dest, char *src)
 {
 	int i;
@@ -15,12 +14,10 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
-
-	while(dest[i])
+	while (dest[i])
 	{
 		dest[i++] = '\0';
 		i++;
 	}
-
 	return (dest);
 }
