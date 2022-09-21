@@ -8,33 +8,35 @@
 
 int _atoi(char *s)
 {
-	int c = 0;
-	unsigned int ni = 0;
-	int min = 1;
-	int isi = 0;
-
-	while (s[c])
+	int i = 0;
+	int sign = 1;
+	unsigned int sum = 0;
+	int flag = 0;
+	
+	while (s[i])
 	{
-		if (s[c] == 45)
+		if (s[i] == 45)
 		{
-			min *= -1;
+			sign *= -1;
 		}
-		while (s[c] >= 48; && s[c] <= 57)
+		
+		while (s[i] >= 48 && s[i] <= 57)
 		{
-			isi = 1;
-			ni = (ni * 10) + (s[c] - '0');
-			c++;
+			flag = 1;
+			sum = (sum * 10) + (s[i] - '0');
+			
+			i++;
 		}
-
-		if (isi == 1)
+		
+		if (flag == 1)
 		{
 			break;
 		}
-
-		c++;
+		
+		i++;
 	}
-
-	ni *= min;
-
-	return (ni);
+	
+	sum = sum * sign;
+	
+	return (sum);
 }
