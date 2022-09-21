@@ -31,6 +31,6 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-	sum = sum * signi;
+	sum = sum * sign;
 	return (sum);
 }
