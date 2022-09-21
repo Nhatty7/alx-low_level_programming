@@ -5,6 +5,7 @@
  * @s: string to be conversted
  * Return: int
  */
+
 int _atoi(char *s)
 {
 	int i = 0;
