@@ -5,7 +5,6 @@
  * @s: string to be conversted
  * Return: int
  */
-
 int _atoi(char *s)
 {
 	int i = 0;
@@ -31,6 +30,6 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-	sum = sum * sign;
+	sum = sum * signi;
 	return (sum);
 }
