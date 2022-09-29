@@ -7,21 +7,21 @@ int check_prime(int n, int i);
   * is_prime_number - Returns if a number is prime
   * @n: the number to be checked
   *
-  * Return: integer
+  * Return: integer value
   */
 int is_prime_number(int n)
 {
-	return (is_prime(n, 1));
+	return (check_prime(n, 1));
 }
 
 /**
-  * is_prime - Check if number is prime
+  * check_prime - Check if number is prime
   * @n: the number to be checked
   * @i: the iteration times
   *
   * Return: 1 for prime or 0 composite
   */
-int is_prime(int n, int i)
+int check_prime(int n, int i)
 {
 	if (n <= 1)
 		return (0);
@@ -32,5 +32,5 @@ int is_prime(int n, int i)
 	if ((n / i) < i)
 		return (1);
 
-	return (is_prime(n, i + 1));
+	return (check_prime(n, i + 1));
 }
