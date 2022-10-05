@@ -33,7 +33,6 @@ int length(char *s)
   */
 char *argstostr(int ac, char **av)
 {
-	int i = ac;
 	int c = 0, sum = 0, temp = 0;
 	int g;
 	char *str;
