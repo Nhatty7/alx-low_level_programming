@@ -1,2 +1,2 @@
-Description about the repository
-Pointers, arrays and strings
+description about the repository
+argc argv
