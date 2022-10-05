@@ -3,26 +3,6 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    char *s;
-
-    s = str_concat("Betty ", "Holberton");
-    if (s == NULL)
-    {
-        printf("failed\n");
-        return (1);
-    }
-    printf("%s\n", s);
-    free(s);
-    return (0);
-}
-
-/**
   * str_concat - Concatenates two strings of any size
   * @s1: the first string to concatenate
   * @s2: the second string to concatenate
