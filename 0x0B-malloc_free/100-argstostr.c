@@ -42,7 +42,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	while(ac--)
+	while (ac--)
 	{
 		sum = sum + (length(av[ac]) + 1);
 	}
