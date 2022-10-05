@@ -13,8 +13,7 @@ int main (int argc, char *argv[])
 		return (1);
 	}
 	
-	num = atoi(argv[1]);
-	
+	num = atoi(argv[1]);	
 	if (num <= 0)
 	{
 		printf("0\n");
@@ -29,7 +28,6 @@ int main (int argc, char *argv[])
 			c += temp;
 			num = num - coins[i] * temp;
 		}
-		
 		i++;
 	}
 	
