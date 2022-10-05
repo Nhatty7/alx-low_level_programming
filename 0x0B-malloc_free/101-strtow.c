@@ -40,7 +40,7 @@ int num_words(char *str)
 		{
 			i++;
 		}
-		else if(((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
+		else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
 		{
 			w += i;
 			i++;
@@ -79,7 +79,7 @@ char **strtow(char *str)
 			{
 				size++;
 			}
-			else if(((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
+			else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
 			{
 				sp[g] = (char *)malloc((sizeof(char) * size) + 1);
 				if (sp[g] != NULL)
