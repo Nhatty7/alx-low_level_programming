@@ -1,2 +1,1 @@
-description about the repository
-argc argv
+New project on make file
